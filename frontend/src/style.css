@@ -133,6 +133,21 @@ h1 {
   background: #fde8e6;
   box-shadow: 0 0 0 2px rgba(192,57,43,0.35);
 }
+.hs-desk.locked {
+  border-color: #8a6d1f;
+  background: #fdf3d8;
+  box-shadow: 0 0 0 2px rgba(138,109,31,0.35);
+  cursor: pointer;
+}
+.hs-desk:not(.empty) { cursor: pointer; }
+.hs-desk .hs-lock-tag {
+  position: absolute; top: 2px; left: 3px; font-size: 0.62rem;
+}
+.hs-err {
+  display: inline-block; margin-left: 0.75rem; padding: 0.25rem 0.6rem;
+  background: #fde8e6; border: 1px solid var(--hs-bad); color: var(--hs-bad);
+  font-size: 0.8rem; border-radius: 2px;
+}
 .hs-desk .hs-paper-tag {
   position: absolute; top: 2px; right: 3px;
   font-size: 0.58rem; font-weight: 800;

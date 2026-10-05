@@ -12,5 +12,6 @@ onMounted(async () => { s.value = await api('/seating/stats?hall_id=1') })
     <div><div class="muted">未排上</div><div class="stat">{{ s.unplaced }}</div></div>
     <div><div class="muted">违规数</div><div class="stat">{{ s.violations }}</div></div>
     <div><div class="muted">座位容量</div><div class="stat">{{ s.capacity }}</div></div>
+    <div><div class="muted">锁定</div><div class="stat">{{ s.locked }}</div></div>
   </div>
 </template>
